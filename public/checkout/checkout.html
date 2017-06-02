@@ -1,0 +1,36 @@
+<div class="jumbo text-center">
+ <h4>Checkout Page</h4>
+</div>
+
+<div class="container" ng-controller="CheckoutCtrl">
+    <div class="well">
+        <div class="page-header">
+            <h3>Quotation</h3>
+        </div>
+
+      <table class="table">
+           <tr ng-repeat="i in items">
+               <td>
+                   {{i.item}}
+               </td>
+               <td>
+                   Rs. {{i.selected}}
+               </td>
+           </tr>
+	   <tr>
+               <td>
+                    <b>Total:</b>    
+               </td>
+               <td>
+                    <b>Rs. {{total}}</b>
+               </td>
+           </tr>
+       </table>
+      
+
+    </div>
+    <div class="text-center">
+        <a type="button" class="btn btn-danger" href="#/cart">Customize</a>
+
+    </div>
+</div>
